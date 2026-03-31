@@ -11,14 +11,6 @@ function initializeGame() {
   updateDisplay();
 }
 
-// ฟังก์ชันเริ่มเกมใหม่
-function resetGame() {
-  initializeGame();
-  document.getElementById("resultContainer").innerHTML = "";
-  document.getElementById("guessInput").value = "";
-  document.getElementById("guessInput").focus();
-}
-
 // ฟังก์ชันตรวจสอบการทาย
 function checkGuess() {
   const guessInput = document.getElementById("guessInput");
@@ -80,7 +72,7 @@ function updateDisplay() {
   attemptsContainer.textContent = `ทายแล้ว: ${attemptCount} ครั้ง`;
 }
 
-// ฟังก์ชันเริ่มเกมใหม่
+// ฟังก์ชันรีเซ็ตเกม
 function resetGame() {
   initializeGame();
   document.getElementById("resultContainer").innerHTML = "";
