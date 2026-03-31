@@ -74,6 +74,17 @@ function checkGuess() {
   guessInput.focus();
 }
 
+// เพิ่มการรองรับ Enter key
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("guessInput")
+    .addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        checkGuess();
+      }
+    });
+});
+
 // ฟังก์ชันอัปเดตจํานวนครั้ง
 function updateDisplay() {
   const attemptsContainer = document.getElementById("attemptsContainer");
