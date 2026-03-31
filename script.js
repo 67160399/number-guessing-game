@@ -10,8 +10,6 @@ function checkGuess() {
  } else if (g > ans) {
  result.textContent = "↓ ตัวเลขสูงไป";
  } else {
-git add index.html
-git commit -m "feat: add basic HTML structure for number guessing game"
  result.textContent = "↑ ตัวเลขตํ่าไป";
  }
 }
